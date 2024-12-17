@@ -10,14 +10,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#D8CFBC',
-        'primary-light': '#E5DED0',    // Lighter shade of primary
-        'primary-lighter': '#F2EDE3',  // Even lighter
-        'primary-dark': '#CBC1AC',     // Darker shade of primary
-        'primary-darker': '#BEB39C',   // Even darker
+        primary: '#F5F2EA',     // Base cream color (for background)
+        'primary-light': '#E5E2DA',  // Slightly darker
+        'primary-dark': '#D5D2CA',   // Darker
+        'primary-darker': '#C5C2BA',  // Even darker
         secondary: '#565449',
         text: '#11120D',
-        background: '#11120D',
+        background: '#F5F2EA',  // Same as primary for the background
+
       },
 
       fontFamily: {

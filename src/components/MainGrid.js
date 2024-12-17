@@ -3,8 +3,9 @@ import React, { useRef } from 'react';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import Image from 'next/image';
+import Link from 'next/link';
 
-export default function MainGrid({ data = {} }) {
+const MainGrid = () => {
     const containerRef = useRef(null);
 
     useGSAP(() => {
@@ -19,7 +20,6 @@ export default function MainGrid({ data = {} }) {
 
     return (
         <div ref={containerRef} className="min-h-screen w-full relative bg-background">
-            {/* Logo in top left corner */}
             <div className="absolute top-8 left-8 z-10">
                 <Image
                     src="/bannerfinal.png"
@@ -31,8 +31,7 @@ export default function MainGrid({ data = {} }) {
             </div>
 
             <div className="flex flex-col lg:flex-row h-screen">
-                {/* Left Side Content */}
-                <div className="lg:w-1/2 p-8 lg:p-16 flex flex-col justify-center text-primary">
+                <div className="lg:w-1/2 p-8 lg:p-16 flex flex-col justify-center text-text">
                     <h1 className="text-4xl lg:text-6xl font-bold mb-8 font-heading">154 TATTOO</h1>
                     <p className="text-lg mb-8 font-body">
                         ABOUT ME
@@ -44,36 +43,31 @@ export default function MainGrid({ data = {} }) {
                     </div>
                 </div>
 
-                {/* Right Side Grid */}
                 <div className="lg:w-1/2 p-4 lg:p-8">
                     <div className="grid grid-cols-2 gap-4 h-full">
-                        <div className="right-box flex flex-col justify-center rounded-[16px] p-6 bg-primary text-text">
+                        <Link href="/Gallery" className="right-box flex flex-col justify-center rounded-[16px] p-6 bg-primary-light text-text hover:bg-primary-dark transition-colors">
                             <h2 className="text-xl lg:text-2xl font-bold mb-3 font-heading">Gallery</h2>
                             <p className="font-body">
-                                Check out my latest work and side projects.
                             </p>
-                        </div>
+                        </Link>
 
-                        <div className="right-box flex flex-col justify-center rounded-[16px] p-6 bg-primary-light text-text">
-                            <h2 className="text-xl lg:text-2xl font-bold mb-3 font-heading">Experience</h2>
+                        <Link href="/Flash" className="right-box flex flex-col justify-center rounded-[16px] p-6 bg-primary-dark text-text hover:bg-primary-darker transition-colors">
+                            <h2 className="text-xl lg:text-2xl font-bold mb-3 font-heading">Flash</h2>
                             <p className="font-body">
-                                My professional journey and achievements.
                             </p>
-                        </div>
+                        </Link>
 
-                        <div className="right-box flex flex-col justify-center rounded-[16px] p-6 bg-primary-dark text-text">
-                            <h2 className="text-xl lg:text-2xl font-bold mb-3 font-heading">Contact</h2>
+                        <Link href="/Booking" className="right-box flex flex-col justify-center rounded-[16px] p-6 bg-primary-dark text-text hover:bg-primary-darker transition-colors">
+                            <h2 className="text-xl lg:text-2xl font-bold mb-3 font-heading">Booking</h2>
                             <p className="font-body">
-                                Let's connect and collaborate!
                             </p>
-                        </div>
+                        </Link>
 
-                        <div className="right-box flex flex-col justify-center rounded-[16px] p-6 bg-primary-darker text-text">
-                            <h2 className="text-xl lg:text-2xl font-bold mb-3 font-heading">Blog</h2>
+                        <Link href="/Shop" className="right-box flex flex-col justify-center rounded-[16px] p-6 bg-primary-darker text-text hover:bg-[#B5B2AA] transition-colors">
+                            <h2 className="text-xl lg:text-2xl font-bold mb-3 font-heading">Shop</h2>
                             <p className="font-body">
-                                Thoughts and insights on development.
                             </p>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -81,4 +75,4 @@ export default function MainGrid({ data = {} }) {
     );
 };
 
-
+export default MainGrid;

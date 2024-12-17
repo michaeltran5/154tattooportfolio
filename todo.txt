@@ -1,0 +1,2 @@
+for color scheme, make the main background the same color as banner background
+and then make the shades of each bento box just a little bit darker`
