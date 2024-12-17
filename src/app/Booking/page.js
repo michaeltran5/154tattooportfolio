@@ -22,7 +22,6 @@ const Booking = () => {
             {/* Content Section */}
             <div className="flex flex-col items-center justify-center min-h-screen px-4 text-center">
                 <h1 className="text-4xl lg:text-6xl font-bold mb-8 font-heading">BOOKING</h1>
-                <p className="text-lg mb-12 font-body">Click below to fill out our booking form</p>
 
                 <a
                     href="https://docs.google.com/forms/d/e/1FAIpQLSfZfh4FT-GL5CvqkWbUtBRu9UdA6rBtjPU1VQy6gk_tOz23Qw/viewform"

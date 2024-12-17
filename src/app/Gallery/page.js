@@ -45,8 +45,7 @@ const Gallery = () => {
 
             <div className="flex flex-col h-screen">
                 <div className="p-8 lg:p-16 flex flex-col text-text text-center">
-                    <h1 className="text-4xl lg:text-6xl font-bold mb-8 font-heading">GALLERY</h1>
-                    <p className="text-lg mb-8 font-body">Healed Designs</p>
+                    <h1 className="text-4xl lg:text-6xl font-bold mb-8 font-heading">HEALED</h1>
                 </div>
 
                 <div className="flex-1 px-8 lg:px-16 pb-16 overflow-y-auto">

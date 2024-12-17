@@ -22,7 +22,6 @@ const Flash = () => {
             {/* Header Section */}
             <div className="p-8 lg:p-16 flex flex-col text-text text-center">
                 <h1 className="text-4xl lg:text-6xl font-bold mb-8 font-heading">FLASH</h1>
-                <p className="text-lg mb-8 font-body">Custom Designs</p>
             </div>
 
             {/* Main Image Section */}
