@@ -18,12 +18,14 @@ const Shop = () => {
                     />
                 </Link>
             </div>
-
-            {/* Content Section */}
-            <div className="flex flex-col items-center justify-center min-h-screen px-4 text-center">
+            {/* Header Section */}
+            <div className="p-8 lg:p-16 flex flex-col text-text text-center">
                 <h1 className="text-4xl lg:text-6xl font-bold mb-8 font-heading">SHOP</h1>
                 <p className="text-lg font-body">Shop coming soon...</p>
+
             </div>
+
+
 
 
         </div>

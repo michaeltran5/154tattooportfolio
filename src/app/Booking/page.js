@@ -18,11 +18,13 @@ const Booking = () => {
                     />
                 </Link>
             </div>
+            {/* Header Section */}
+            <div className="p-8 lg:p-16 flex flex-col text-text text-center">
+                <h1 className="text-4xl lg:text-6xl font-bold mb-8 font-heading">BOOKING</h1>
+            </div>
 
             {/* Content Section */}
-            <div className="flex flex-col items-center justify-center min-h-screen px-4 text-center">
-                <h1 className="text-4xl lg:text-6xl font-bold mb-8 font-heading">BOOKING</h1>
-
+            <div className="flex flex-col items-center px-4 text-center -mt-8">
                 <a
                     href="https://docs.google.com/forms/d/e/1FAIpQLSfZfh4FT-GL5CvqkWbUtBRu9UdA6rBtjPU1VQy6gk_tOz23Qw/viewform"
                     target="_blank"
@@ -32,14 +34,6 @@ const Booking = () => {
                     Open Booking Form
                 </a>
             </div>
-
-            {/* Navigation Button */}
-            <Link
-                href="/gallery"
-                className="fixed bottom-8 right-8 bg-primary-dark hover:bg-primary-darker text-text px-6 py-3 rounded-full font-body transition-colors shadow-lg"
-            >
-                View Gallery
-            </Link>
         </div>
     );
 };
